@@ -1,26 +1,64 @@
-# Python Quiz Game
+Python Quiz Game
+A command-line quiz game built using Python and MySQL, supporting multiple participants, difficulty levels, and an admin interface for managing questions.
 
-A command-line quiz game using Python and MySQL.
+Features
+Multiple quiz levels with increasing difficulty
 
-## Features
-- Multiple levels and participants
-- Manager/admin mode for adding/removing questions
-- Score tracking
+Support for multiple participants
 
-## Setup
+Admin/Manager mode to add, edit, or delete questions
 
-1. Install dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
-2. Import the database:
-   ```
-   mysql -u root -p < quizapp.sql
-   ```
-3. Edit `quiz.py` to set your MySQL password if needed.
+Score tracking and result display
 
-4. Run the game:
-   ```
-   python quiz.py
-   ```
+Getting Started
+Prerequisites
+Python 3.7 or higher
+Download and install from python.org
+
+MySQL Server
+Download and install the MySQL Community Server from mysql.com
+
+Install Python Dependencies
+Use the following command:
+
+bash
+Copy
+Edit
+pip install mysql-connector-python
+Database Setup
+Import the SQL file into your MySQL server:
+
+bash
+Copy
+Edit
+mysql -u root -p < quizapp.sql
+Make sure your MySQL user, password, and database name in the Python code match your local setup.
+
+(Optional) Update Credentials
+
+If your MySQL username or password is different, update the connection logic inside your Python file (likely in a function like connect_to_database()).
+
+Running the Quiz Game
+Once everything is set up, run the following command from your project directory:
+
+bash
+Copy
+Edit
+python quiz.py
+(Replace quiz.py with the actual name of your Python file if it's different.)
+
+Project Structure
+bash
+Copy
+Edit
+quiz.py           # Main game logic
+quizapp.sql       # MySQL schema and sample data
+README.md         # This file
+Future Improvements (Optional)
+Add a graphical interface (Tkinter or PyQt)
+
+Account system for multiple managers
+
+Ability to create difffernt set of questions based on type
+
 

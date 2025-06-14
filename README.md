@@ -28,10 +28,10 @@ Import the SQL file into your MySQL server:
 
 ```mysql -u root -p < quizapp.sql```
 
-Make sure your MySQL user, password, and database name in the Python code match your local setup.
+> Make sure your MySQL user, password, and database name in the Python code match your local setup.
 
 
-If your MySQL username or password is different, update the connection logic inside your Python file (likely in a function like connect_to_database()).
+> If your MySQL username or password is different, update the connection logic inside your Python file (likely in a function like connect_to_database()).
 
 ## Running the Quiz Game:
 Once everything is set up, run the following command from your project directory:

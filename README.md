@@ -44,7 +44,7 @@ Once everything is set up, run the following command from your project directory
 quizapp.sql       # MySQL schema and sample data
 README.md         # This file***
 
-# Future Improvements:
+## Future Improvements:
 - Add a graphical interface (Tkinter or PyQt)
 
 - Account system for multiple managers
